@@ -27,7 +27,12 @@ window.SITE_CONTENT = {
     location: "Add city and country",
     address: "",
     mapUrl: "",
-    appointmentTypes: "In-person · Add online availability",
+    appointmentTypes: "Hospital · Home visit · Online video",
+    consultationTypes: [
+      { title: "At the hospital", text: "Meet in person at Jilani Dar Shefa for a private consultation." },
+      { title: "At the patient’s home", text: "An in-person home visit may be arranged when appropriate and available." },
+      { title: "Online video call", text: "Speak from your own home through an agreed video-calling service." }
+    ],
     hours: "Add consultation days and hours"
   },
   contact: {

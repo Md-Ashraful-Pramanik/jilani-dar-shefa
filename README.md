@@ -38,6 +38,7 @@ The defaults below are already present in `content.js`. Replace placeholder text
 | Clinic | `address` | Full public clinic address; optional |
 | Clinic | `mapUrl` | Google Maps share link; optional |
 | Clinic | `appointmentTypes` | In-person/online availability |
+| Clinic | `consultationTypes` | The hospital, home-visit, and online consultation cards |
 | Clinic | `hours` | Consultation days and hours |
 | Contact | `phone` | Public phone number; optional |
 | Contact | `whatsapp` | International format, e.g. `+8801...`; optional |

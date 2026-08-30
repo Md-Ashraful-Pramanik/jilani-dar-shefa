@@ -25,6 +25,7 @@
   document.querySelector("#quick-facts").innerHTML = facts.map(([label, value]) => `<div><dt>${label}</dt><dd>${value}</dd></div>`).join("");
 
   document.querySelector("#credentials").innerHTML = data.doctor.credentials.filter(Boolean).map((item) => `<p><span aria-hidden="true">✓</span>${item}</p>`).join("");
+  document.querySelector("#consultation-modes").innerHTML = data.clinic.consultationTypes.map((mode, index) => `<article><span aria-hidden="true">${["⌂", "◇", "◉"][index] || "•"}</span><div><h3>${mode.title}</h3><p>${mode.text}</p></div></article>`).join("");
   document.querySelector("#steps").innerHTML = data.approach.steps.map((step, index) => `<article class="step reveal"><span>0${index + 1}</span><h3>${step.title}</h3><p>${step.text}</p></article>`).join("");
   document.querySelector("#areas").innerHTML = data.areas.items.map((item, index) => `<div><span>0${index + 1}</span><p>${item}</p><i aria-hidden="true">↗</i></div>`).join("");
   document.querySelector("#preparation-list").innerHTML = data.preparation.items.map((item, index) => `<li><span>${String(index + 1).padStart(2, "0")}</span><p>${item}</p></li>`).join("");
