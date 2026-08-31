@@ -12,6 +12,7 @@ To update the live site without using a terminal:
 2. Click **`content.js`**.
 3. Click the pencil icon (**Edit this file**).
 4. Change only the words inside quotation marks. Do not remove commas, brackets, or quotation marks.
+   To break a line inside any text, type `\n` where the break should go, for example `"First line\nSecond line"`.
 5. Click **Commit changes…**, write a short note such as `Update phone number`, then click **Commit changes** again.
 6. Wait about 1–3 minutes and refresh the website.
 
@@ -27,13 +28,15 @@ The defaults below are already present in `content.js`. Replace placeholder text
 | Site | `headline` | `A calm space to tell your whole health story.` |
 | Site | `introduction` | Short introduction shown in the hero |
 | Doctor | `name` | `Dr. Salma Afroz` |
-| Doctor | `shortTitle` | `Licensed Homeopathic Practitioner` |
+| Doctor | `membership` | `Professional Member, Australian Homoeopathic Association (AHA)`; shown under the name in the header, hero badge, and footer |
+| Doctor | `shortTitle` | `Qualified Homoeopathic Practitioner` |
 | Doctor | `photo` | Empty; use `assets/salma-afroz.jpg` after adding a photo |
 | Doctor | `bio` | Short professional biography |
 | Doctor | `philosophy` | How she works and what she values |
 | Doctor | `credentials` | A list of licences, degrees, memberships, and years |
 | Doctor | `languages` | `Bangla`, `English` |
 | Clinic | `name` | `Jilani Dar Shefa` |
+| Clinic | `tagline` | `Natural Health - Homoeo Clinic`; second line under the practice name |
 | Clinic | `location` | City and country |
 | Clinic | `address` | Full public clinic address; optional |
 | Clinic | `mapUrl` | Google Maps share link; optional |
@@ -42,15 +45,17 @@ The defaults below are already present in `content.js`. Replace placeholder text
 | Clinic | `hours` | Consultation days and hours |
 | Contact | `phone` | Public phone number; optional |
 | Contact | `whatsapp` | International format, e.g. `+8801...`; optional |
-| Contact | `email` | Public practice email; optional |
+| Contact | `email` | Public practice email; the "Email us" button opens a message to it |
 | Contact | `facebook` | Facebook page URL |
-| Contact | `bookingUrl` | Online booking link; optional and preferred by the main button |
+| Contact | `instagram` | Instagram profile URL; optional |
 | Approach | `intro` | Introduction to consultations |
 | Approach | `steps` | Any number of `{ title, text }` items |
 | Areas | `heading` | Section title |
 | Areas | `intro` | Careful description of areas of interest |
 | Areas | `items` | Any number of practice-interest labels |
-| Preparation | `heading`, `intro`, `note` | Before-your-visit guidance |
+| Preparation | `heading`, `intro` | Before-your-visit guidance |
+| Preparation | `notes` | Any number of note lines, shown on the left of the section |
+| Preparation | `itemsIntro` | Plain line that heads the checklist, e.g. `This will include the followings:` |
 | Preparation | `items` | Any number of questionnaire/checklist prompts |
 | Resources | `heading`, `intro` | Educational-library introduction |
 | Resources | `items` | Article objects with `category`, `title`, `summary`, `url`, and `source` |
@@ -74,7 +79,7 @@ For a new FAQ:
 { question: "Your question?", answer: "Your answer." },
 ```
 
-Avoid publishing patient names, private health information, unverified testimonials, guaranteed outcomes, or claims that homeopathy can replace medical diagnosis, vaccination, or effective treatment.
+Avoid publishing patient names, private health information, unverified testimonials, guaranteed outcomes, or claims that homoeopathy can replace medical diagnosis, vaccination, or effective treatment.
 
 ## Adding a practitioner photo
 
